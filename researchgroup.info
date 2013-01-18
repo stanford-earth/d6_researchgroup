@@ -1,0 +1,39 @@
+core = "6.x"
+description = "Research Group template"
+engine = "phptemplate"
+name = "Researchgroup"
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
+
+regions[homepage_feature] = "Homepage Feature"
+regions[homepage_announcement] = "Homepage Announcement"
+regions[homepage_columns] = "Homepage Columns"
+regions[left] = "Left sidebar"
+regions[right] = "Right sidebar"
+regions[content] = "Content"
+regions[footer] = "Footer"
+
+scripts[] = "javascripts/searchbox.js"
+scripts[] = "javascripts/jquery.clickmenu.setup.js"
+scripts[] = "javascripts/jquery.profile_tabs.js"
+scripts[] = "javascripts/jquery.toggle_cv_listings.js"
+scripts[] = "javascripts/stepcarousel.js"
+scripts[] = "javascripts/stepcarousel.setup.js"
+scripts[] = "javascripts/coda-slider.js"
+scripts[] = "javascripts/jquery.scrollTo-1.3.3.js"
+scripts[] = "javascripts/jquery.localscroll-1.2.5.js"
+scripts[] = "javascripts/jquery.serialScroll-1.2.1.js"
+
+stylesheets[screen][] = "stylesheets/base.css"
+stylesheets[screen][] = "stylesheets/site.css"
+stylesheets[print][]  = "stylesheets/base.css"
+stylesheets[print][]  = "stylesheets/print.css"

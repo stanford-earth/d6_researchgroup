@@ -1,0 +1,116 @@
+<table  WIDTH="100%">
+<tr>
+<td VALIGN=TOP>
+<div class="custom_profiles">
+
+<?php
+  $author = user_load(array('uid' => arg(1)));
+  $output = '<div class="profile">';
+  $output .= '<div class="picture">';
+  $output .= '</div>';
+  foreach ($fields as $category => $items) {
+    if (strlen($category) > 0) {
+      $output .= '<h2 class="title">'. check_plain($category) .'</h2>';
+    }
+    $output .= '<dl>';
+    foreach ($items as $item) {
+      if (isset($item['title'])) {
+        $output .= '<dd class="'. $item['class'] .'"><b>'. $item['title'] .'</b>: '. $item['value'] .'</dd>';
+      }
+    }
+    $output .= '</dl><br>';
+  }
+  $output .= '</div>';
+  print $output;
+?>
+
+</td>
+<td VALIGN=TOP><center>
+
+
+<?php
+//         Avatar picture
+global $user;
+if ($account->picture) { print theme('user_picture', $account);
+
+if ($user->uid == $account->uid) {
+
+$edit_link = "<a href='../user/" . $account->uid . "/edit" . "'>" . t('Change your avatar.') . '</a>';
+print $edit_link;
+
+$edit_link2 = "<br><br><a href='../user/" . $account->uid . "/edit/your_profile_category" . "'>" . t('Edit profil.') . '</a>';
+print $edit_link2;
+
+
+    }
+}
+
+  else {
+print '<img src="../themes/your_theme_name/images/noavatar.png" width="100" height="100" />';
+
+if ($user->uid == $account->uid) {
+$edit_link = "<br><br><a href='../user/" . $account->uid . "/edit" . "'>" . t('Load an avatar!') . '</a>';
+print $edit_link;
+    }
+}
+
+
+//           Permission
+global $user;
+if (user_access('administer users') && ($user->uid != $account->uid)): ?>
+<div class="fields">
+<?php
+//     Message link
+$contact_link = "<br><a href='../user/" . $account->uid . "/contact" . "'>" . '<img src="../themes/your_theme_name/images/message.png" width="80" height="50" />' . '</a>';
+  print $contact_link;
+?>
+
+</div>
+
+<?php endif; ?>
+</center>
+</td>
+</tr>
+</table>
+<?php
+//      Contents
+$nlimit = 10;
+$result = db_query_range(db_rewrite_sql("SELECT n.nid, n.title, n.created FROM {node} n WHERE n.status = 1 AND (n.type = 'blog' OR n.type = 'article' OR n.type = 'forum') AND n.uid = %d ORDER BY n.created DESC"), $account->uid, 0, $nlimit);
+
+$headeroutput = '<h2 class="title">' . t('Contents') . "</h2>";
+$listoutput = node_title_list($result);
+
+if($listoutput != theme('node_list', '', NULL)){
+    print $headeroutput;
+    print '<blockquote>' . $listoutput . '</blockquote>';
+}
+?>
+
+<br />
+
+<?php
+//    Comments
+$commentblock = phptemplate_my_comments($account->uid,10);
+echo $commentblock;
+
+
+function phptemplate_my_comments($uid,$howmany) {
+  $returnstr = "<h2 class='title'>" . t(Comments) . "</h2><ul>";
+  $result = db_query('SELECT n.nid, n.title, c.cid, c.subject FROM node n INNER JOIN comments c ON n.nid = c.nid WHERE c.uid = %d AND c.status = 0 ORDER BY c.timestamp DESC LIMIT 0,%d', $uid, $howmany);
+  while ($r = db_fetch_object($result)) {
+    $returnstr .= '<li>' . "<a href='../node/" . $r->nid . "#comment-" . $r->cid . "'>" . $r->subject . '</a>&nbsp;&nbsp;<i>(' . $r->title . ')</i></li>';
+      $last_row = $r;
+    }
+  $returnstr .= '</ul>';
+  if($last_row){
+        return $returnstr;
+    }
+}
+
+
+//    More link
+if($headeroutput != '' && $commentblock != ''){
+    $track_link = "<br><a href='/user/" . $account->uid . "/track" . "'>" . t('Read more nodes and comments') . '</a>';
+  print $track_link;
+}
+?>

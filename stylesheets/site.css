@@ -1,0 +1,758 @@
+/**
+ * Copyright (c) 2010, Stanford University. All rights reserved.
+ * Stanford University, School of Earth Sciences Site framework. 
+ * Site specific overrides for : base.css
+ * 
+ */
+
+body {
+	background-image: url('');
+	background-repeat: repeat-x;
+	background-color: #D4C9AD;
+}
+
+#page-header #navigation, #container, #footer {
+	border-color: #666;
+}
+
+#page-header {
+	height: auto;
+}
+
+#page-header #branding.text {
+	top: 0;
+}
+
+#container {
+	border-top: 1px solid #666;
+}
+
+#container, #footer {
+	border-radius: 10px;
+	box-shadow: 0 0 3px #666;
+}
+
+/* Wider Globalnav override for departments */
+#globalnav #linksbar  {
+	width: 530px;
+	-webkit-box-shadow: 0 0 5px #666;
+	-moz-box-shadow: 0 0 5px #666;
+	box-shadow: 0 0 5px #666;
+}
+
+#globalnav #linksbar a.sunet {
+	margin: 0 5px;
+}
+
+/* Branding */
+#page-header #branding { float:left; margin:0; width: 50%; height: 70px; margin: 0 0 1px; position: relative; top: -4px; left: 0; z-index: 99999; }
+#page-header #branding img { margin: 3px 0 0; border:0;}
+#page-header #branding a { border: 0 !important; cursor: pointer }
+#page-header #branding.text a {
+	width: 270px;
+	color: #000;
+	font: normal 160% 'Trebuchet MS',sans-serif;
+}
+
+#page-header #branding.text {
+	min-height: 75px;
+	top: 0;
+	padding: 0 0 1em 85px;
+	background: transparent url(../images/seslogo_only.png) no-repeat 0 0;
+}
+
+#page-header #branding span {
+	display: block;
+}
+
+#page-header #branding .affiliation {
+	display: block;
+	font-weight: normal;
+	font-size: 55%;
+	text-transform: uppercase;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	*letter-spacing: .25em;
+	white-space: nowrap;
+}
+
+#page-header #branding .univ,
+#page-header #branding .school {
+	border: 1px solid #aaa28d;
+}
+
+#page-header #branding .univ {
+	border-width: 0 0 1px 0;
+}
+
+#page-header #branding .name {
+	text-shadow: 1px 1px 3px rgba(255,255,255,0.7);
+}
+
+#page-header #branding .school {
+	border-width: 1px 0 0 0;
+}
+#navigation { 
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#navigation #search-box #query,
+#navigation #search-box #search .btn { border-color: #1E5673; }
+#navigation ul li a {
+	background-image: none;
+	background-color: none;
+	border-right: 1px dotted #fff;
+}
+
+#navigation ul li:first-child a {
+	border-top-left-radius: 10px;
+}
+
+/* Featured content homepage module */
+#featured-research { width: 100%; height: 300px; margin:10px; padding:0; font-family: verdana,tahoma, arial, helvetica, sans-serif; position: relative; }
+#featured-research .featured-slide { position: absolute; z-index: 10; }
+#featured-research .featured-slide #overlay { width: 390px; height: 260px; padding:0; position: absolute; top: 10px; right: 10px; z-index: 6;   }
+#featured-research .featured-slide #overlay #project-title { float: left; width: 175px; height: 260px; padding:10px; background-color: #665955; overflow: hidden; }
+#featured-research .featured-slide #overlay #project-description { float: right; width: 175px; height: 260px; padding:10px; background-color: #FFF; padding: 10px; }
+#featured-research .featured-slide #overlay #project-title h2 { color: #FFFFFF; }
+#featured-research .featured-slide #overlay #project-description p  { color: #333; font-size: 12px; }
+#featured-research #slide1 { z-index: 11; }
+
+/* Featured content -- Quicklinks */
+#featured-research #featured-right {
+	float: left;
+	width: 307px;
+	padding: 0 0 0 10px;
+	position: relative;
+}
+
+#featured-research #featured-right p {  font-size: 12px; font-style: normal }
+#for-quick-links { border: 1px solid #eee; overflow: auto; width: 310px; padding: 0 0 1px 1px;}
+#featured-research h3 { font-family:  Georgia,'Times New Roman', serif; font-size: 18px; font-style: normal; margin: 0 0 4px;  }
+
+/*#quicklinks { width: 312px; height: 101px; margin: 0 0 15px; position: relative; left: -4px; background-image: url(../images/quickLinks_bg.png); background-repeat: no-repeat; background-position: 0 0; }*/
+/*#quicklinks h2 { position: relative; top: 5px; left: 12px; color: #FFF; }*/
+.quicklinks ul { display: block; padding: 0; margin: 0 6px 0 13px; overflow: auto;}
+.quicklinks ul li { float: left; margin: 8px 0px 3px 15px; list-style: circle; width: 40%; font-size: 11px; }
+
+.quicklinks .content {
+	-webkit-box-shadow: 0 0 3px #ccc;
+	-moz-box-shadow: 0 0 3px #ccc;
+	*border: 1px solid #ccc;
+	box-shadow: 0 0 3px #666;
+	padding: 1px;
+	background-color: #fff;
+}
+
+.quicklinks h2 {
+	position: relative;
+	color: #fff;
+	background-color: #900;
+	padding: 3px 7px;
+	font-size: 18px;
+}
+
+.quicklinks .arrow-down {
+	position: absolute;
+	bottom: -10px;
+	*bottom: -9px;
+	left: 20px;
+	width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+	border-top: 10px solid #900;	
+}
+/*
+#quicklinks ul {
+	padding: 1em 0 0 2em;
+	overflow: hidden;
+}
+
+
+#quicklinks li {
+	list-style: circle;
+}
+
+#quicklinks li a {
+	display: block;
+	margin: 0 0 1em 0;
+}
+*/
+/* Alert banner */
+#alert-banner .content, 
+.alert-banner .content {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin: 0 0 1em 0;
+	padding: 3px;
+	position: relative;
+}
+
+#alert-banner .content,
+.alert-banner .content {
+	border-radius: 4px;
+	padding: 10px 10px 10px 10px;
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, right top, from(#e9d39e), to(#fff), color-stop(0.1, #fff)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(left, #e9d39e, #fff 80px);
+	background-image: -moz-linear-gradient(left, #e9d39e, #fff 80px);
+	background-image: -ms-linear-gradient(left, #e9d39e, #fff 80px); /* IE10 */
+	background-image: -o-linear-gradient(left, #e9d39e, #fff 80px);
+	background-image: linear-gradient(left, #e9d39e, #fff 80px);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e9d39e', EndColorStr='#ffffff', GradientType=1); /* IE6ÐIE9 */
+}
+
+#alert-banner h2, 
+.alert-banner h2 {
+	float: left;
+	margin: 0 65px 0 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Verdana;
+	color: #333;
+	letter-spacing: -1px;
+}
+
+#alert-banner p, 
+.alert-banner p {
+	float: left;
+	margin: 0;
+	line-height: 100%;
+}
+
+#alert-banner .more,
+.alert-banner .more {
+	float: right;
+	border-left: 1px solid #ccc;
+	padding-left: 15px;
+}
+
+ul.dept-links-for-home { width: 100%; padding: 5px 5px 5px 0; margin: 0 0 5px; }
+ul.dept-links-for-home li { margin:0; }
+ul.dept-links-for-home li a { display:block; width: 100%; background-color: #F2F2E9; padding: 5px; margin-bottom: 1px; border:0;}
+ul.dept-links-for-home li a:hover { background-color: #d6dde1; background-image: url(../images/simple_arrow.png); background-repeat: no-repeat; background-position: 294px 5px;}
+
+/* Secondary featured content */
+.secondary-features { float: left; margin: 10px 0 20px 2px; width: 178px; border: 0; overflow: hidden; }
+.secondary-features h3 { font-size: 125%; }
+.secondary-features .photo { margin: 0 0 4px 0; width: 186px; height: 131px; overflow: hidden; background-image: url(../images/featuresbg.png); background-repeat: no-repeat; background-position: 0px 0; }
+.secondary-features .photo a { border: 0; }
+.secondary-features .photo img {margin: 2px; width: 178px; height: 120px; }
+.secondary-features .description { width: 100%; padding: 0 2px; }
+.secondary-features .description p { display: block; line-height: 15px; padding: 0 0 3px; margin:2px 0; /*border-bottom: 1px dotted #999;*/ }
+.secondary-features ul.topics { padding:0; margin:0; }
+.secondary-features ul.topics li { display: inline; margin:0; padding:0;  }
+#middle { margin: 5px 5px 10px 5px; padding: 5px 5px 20px; position: relative; left: 1px; }
+
+/* Content featured @ Page bottom */
+.bottom-features { float: left; padding: 7px; margin: 10px 8px 10px 0; width: 255px; overflow: hidden; background-color: #F9F8F3; border: 1px solid #EBE6DF; }
+.bottom-features .photo { margin: 0 0 5px; height: 170px;  overflow: hidden; }
+.bottom-features .photo img { width: 255px;  }
+.bottom-features .description, .bottom-features-full .excerpt { width: 100%; }
+.bottom-features .description p { margin: 3px 0; padding: 0 0 2px; line-height: 16px; border-bottom: 1px solid #666; }
+.bottom-features .description h5 { font-weight: normal; }
+.bottom-features-full .excerpt p { display: block; padding: 0 0 3px; margin:2px 0; border-bottom: 1px solid #CCC; }
+.bottom-features ul.topics, .bottom-features-full ul.topics { padding:0; margin:0;  }
+.bottom-features ul.topics li, .bottom-features-full ul.topics li { display: inline; margin:0; padding:0; }
+.bottom-features ul.topics li { font-size: 90%; }
+.bottom-features-full { margin: 0px 5px 2px 0; padding: 5px;  }
+.bottom-features-full .photo { float: left; margin: 0 4px 0 0; }
+.bottom-features-full .excerpt { margin: 0 0 15px; width: 99%; }
+.bottom-features-full .excerpt h5 { margin:-2px 0; }
+
+#top-content { }
+#news-and-events { float:left; padding: 0 0 0 3px; width: 385px; }
+#bottom-content { float: left; *width: 100%; padding:1px; }
+#bottom-content .block {display: inline-block;  *float: left; *clear: none; vertical-align: top;}
+.grid-1 {width: 100%;}
+.grid-1-2 {width: 49%;}
+.grid-1-3 {width: 33%;}
+.grid-2-3 {width: 66%;}
+.grid-1-4 {width: 24%;}
+#announcements, #spotlight { float: left; width: 295px; padding: 0 5px 15px; margin: 0 5px 0 0; border: 0; overflow: visible; position: relative; }
+#announcements p, #spotlight p { display:block;  margin:0; overflow: hidden; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; line-height: 20px; height: 20px; }
+#announcements p a, #spotlight p a { float: right; text-transform: uppercase; border:0; color: #666; overflow: hidden; font-size: 11px;}
+#announcements p a:hover, #spotlight p a:hover { text-decoration: underline; color: #990000;  }
+#spotlight #spotlight-content { margin: 8px 5px; padding: 3px; }
+#spotlight #spotlight-content .photo { float: left; margin: 5px 6px 0 0; padding:0; }
+#spotlight #spotlight-content p { display: inline; border:0; margin:0; padding:0; }
+
+#spotlight { width: 314px; margin: 0 0 0 14px; padding: 0; background-color: #EEE; border: 1px solid #CCC; position: relative; }
+#spotlight #wrapper { width: 306px; padding: 0; margin:0; background-color: #FFF; border: 1px solid #CCC; position: absolute; bottom: 20px; right: 4px; }
+#spotlight #heading { width: 255px; height: 30px; background-image: url(../images/headingbg.png); background-repeat: no-repeat; background-position: 0 0; position: relative; left: -6px; top: 8px; }
+#spotlight #heading h3 { color: #FFF; line-height: 29px; margin: 0 0 0 10px; }
+#spotlight .spotlighted { background-color: #F9F8F3; border: 1px solid #EDE8DD; width: 300px; padding: 4px 4px 10px; }
+#spotlight .spotlighted .photo { width: 300px; height: 160px; background-color: #CCC; margin: 0 0 10px;}
+#spotlight .spotlighted .description { width: 305px; }
+#spotlight .spotlighted .description p { display: inline; border:0; }
+#spotlight ul#departments { margin: 1px; padding:0;  }
+#spotlight ul#departments li { margin: 0 0 4px; padding:0;}
+#spotlight ul#departments li#last { margin:0; }
+#spotlight ul#departments li a { display: block; width: 269px; height: 70px; padding: 4px 30px 0 3px; background-image: url(../images/deptbg123.png); background-repeat: no-repeat; background-position: 0 0; border: 1px solid #EEE; font-size: 12px; }
+#spotlight ul#departments li a:hover { background-position: 0 -75px; border: 1px solid #CCC }
+#spotlight ul#departments li a span { font-size: 10px; border: 0; text-decoration: none; color: #333; line-height: 11px; text-shadow: none}
+
+/* Banners */
+#featured-projects { float: left; padding:0; width: 559px; margin: 10px 5px 0 0; }
+.program-calendar #upcoming-event-banner { #width: 100%; height: 90px; margin: 8px 0; background-color: #EEE; }
+#homepage-banner { display:block; width: 312px; height: 90px; overflow: hidden; background-image: url(../images/geoeng_app.jpg); background-repeat: no-repeat; background-position: 0 0; color: #FFF; position: relative; border:0 !important; cursor: pointer;}
+a#homepage-banner:hover { background-position: 0 -90px; text-decoration: underline; color: #999; text-shadow: none; border:0 !important;}
+a#homepage-banner p { display: block; height: 30px; color: #FFF; font-size: 11px; line-height: 14px; position: absolute; bottom: 7px; left: 20px; border:0;}
+
+/* Featured blogs */
+#featured-blogs { float: left; background-image: url(../images/tilebg.gif); padding: 0px 10px 10px; width: 375px; position: relative; }
+#featured-blogs .blogs-homepage-listing li { margin: -10px 0; }
+#featured-blogs ul { margin: 0; padding:0; list-style: none; }
+#featured-blogs ul li { list-style: none; padding:0; line-height: 16px;}
+#featured-blogs ul li.excerpt   { line-height: 16px; color: #333; padding: 0; }
+#featured-blogs ul li.excerpt strong { font-size: 13px;}
+#featured-blogs ul li.excerpt img { float: left; margin: 4px 4px 0 0; width: 89px; height: 60px; border: 1px solid #CCC; padding: 1px; }
+
+
+/* Revelant links */
+#publications { padding: 0 0 10px; }
+#publications ul { padding:0; margin: 0 20px; list-style:none;}
+#publications ul li { margin:10px; padding: 0px; list-style-position: outside; list-style-image: url(../images/arrow.png); font-size: 90%; }
+#publications ul li a { padding:0; margin:1px 0; line-height: 17px; font-size: 105%; font-weight: bold;  }
+#publications ul li a:hover { text-decoration: none; }
+#publications p { line-height: 16px; margin: 3px 0 0;}
+#publications a { font-weight: bold; }
+#publications h3 { margin: 0 10px; }
+
+/* Sponsors module */
+#for-sponsors {  position: relative; }
+#for-sponsors h6 { position: absolute; top: -8px; left: 10px; font-size: 9px; color: #999; padding: 1px 3px; border: 1px solid #CCC; background-color: #FFF; cursor: pointer;}
+#sponsors { border: 1px solid #CCC; border-left:0; border-right:0; height: 100px;}
+#sponsors ul { padding:0; margin:0; list-style: none;}
+#sponsors ul li { float:left; height: 95px; display: block; margin: 10px 29px; overflow:hidden; vertical-align: middle;}
+#sponsors ul li a { border:0 }
+
+/* Home page content */
+#about-text  { border-right: 1px solid #CCC; width: 34%; margin-top: 8px; float: left; }
+#about-text p { margin-top: 5px; }
+
+/* Apply Now Button */
+a.apply-now { display: block; width: 188px; height: 53px; margin: 0 0 10px 0; background-image: url(../images/btn_apply.png); background-repeat: no-repeat; background-position: 0 0; text-decoration: none; border:0; line-height: 53px; font-size: 0; text-indent: -9999px }
+a.apply-now:hover { background-position: 0 -53px; text-decoration: none; border:0;}
+
+
+/* Error page */
+#error-page { clear:both; height: 800px; width: 100%; }
+
+/* Forms */
+h4.errors { color: #990000; }
+h4#message { clear:both; margin: 20px 0; color:#FFF; background-color: #990000; padding: 4px; font-weight: normal; font-size: 13px; }
+h6#deadline { color: #990000; margin: 0 0 4px; font-weight: bold; }
+
+form { position: relative; }
+fieldset { clear:both; margin: 10px 0; padding: 10px; width: 475px;  border: 1px solid #CCC; background-color: #EEE; overflow:auto; position: relative; top: 5px;}
+fieldset h4 { text-align: left;}
+fieldset label { clear: both; width: 120px; text-align:right; float: left; margin:5px; }
+fieldset label.for-checkbox { float: left; clear: none; width:auto; text-align:left; margin: 0; font-size:80%;}
+fieldset label.for-checkbox span { color: #990000; font-weight: bold; font-size: 12px;}
+fieldset input { float: left; margin: 5px 0; width:250px;  padding:3px; border: 1px solid #666; }  
+fieldset input.form-error { float: left; margin: 5px 0; width: 250px;  padding:3px; border: 1px solid orange; background-image:url(../images/fail.png); background-repeat: no-repeat; background-position: right 5px; }
+fieldset input.box  { width:15px; margin: 0 5px 0 10px; border:0; }
+fieldset input.radio  { float: none; width:15px; margin: 0 5px 0 0; border:0;} 
+fieldset label.for-radio  { float:none; width:auto; margin:0 20px 0 0; }
+fieldset input.num  { width:50px; }
+fieldset select.dob { width: 84px; margin: 2px 3px 0 0; }
+fieldset .date { width: 80px; }
+fieldset select { float: left; margin:5px 0; width:120px }  
+fieldset#confirm { padding: 20px; width: 560px; min-height: 30px; height: 30px;}
+fieldset textarea { width:340px; height:220px; border: 1px solid #666; overflow: auto; }
+fieldset textarea.form-error { width:340px; height:220px; border: 1px solid orange; background-image:url(../images/fail.png); background-repeat: no-repeat; background-position: 325px 5px;}
+fieldset p span.word-count { color :#FF0000; }
+fieldset legend { color: #990000; border: 1px solid #CCC; padding: 3px; background-color: #FFF; position: relative; top: 1px;}
+.form-button { float: right; background-color:#FFF; border: 1px outset #666; cursor: pointer; }
+
+#people-searches { background-image:none; height: 220px; float:left; }
+fieldset.people-search { display: block;  background-color: transparent; margin:0; padding: 0 0 30px; overflow: auto; overflow: auto; border:0; width: 550px; position: relative; }
+fieldset.people-search select { float: left; margin: 0 10px; height: 22px; border: 1px outset #999; width: 200px; }
+fieldset label.search-by-name { float: left; width: 150px; }
+fieldset div.submit { clear: both; position: relative; top: 5px; left: 160px; overflow: auto; width: 100px; }
+
+
+#copy-checkbox { margin: 10px 0; overflow: hidden}
+#uploader { position: absolute; top:10px; height: 50px; width: 400px; padding: 30px; bottom: 100px; margin: auto; text-align: center; border: 1px solid #CCC; background-color:#FFF; }
+.warn { color: red; font-weight: bold; text-align: center;}
+.quantity, .schoolinfo { clear:both; margin: 10px 0; position: relative; border: 1px dashed #999; padding: 0px; overflow:auto }
+
+/* Promtions & sign up */
+
+#promotion { margin: 0px 2px 0; text-align: center; background-image: url(images/featuredbg.png); background-position: 3px 106px; background-repeat: no-repeat; background-color: #FFF; width: 179px; padding: 0 2px 0; height: auto; border: 1px solid #CCC; }
+#promotion #description { margin: 6px 0 0; padding: 0 3px 14px; width: 100%; text-align: left; font-size: 90%; }
+#newsletter-signup { margin: 15px 2px 0; background-color: #FBFBFB; width: 195px; padding: 0 2px 0; height: auto;border: 1px solid #E6E6E6; }
+#newsletter-signup p { font-size: 85%; }
+#newsletter-signup #signup-email { border: 1px solid #999; width: 185px; margin:0 0 0 2px; padding: 4px 2px; color: #666; font-size: 11px }
+#newsletter-signup #signup-button { display: block; color: #FFF; margin: auto; width: 114px; height: 30px; border:0; background-image: url(../images/button.png);margin: 13px auto; cursor: pointer; }
+
+
+/*#
+  # Homepage image gallery 
+  # Step carausel
+  #
+  #*/
+  
+#stepcarousel-wrapper    { clear:both; position: relative; width: 958px; height: 175px; padding:0; margin: 0; background-color: #F9F8F3; overflow: hidden; border: 1px solid #EBE6DF; }
+.stepcarousel-heading    { width: 100%; height: 25px; background-color: #EBE6DF; color: #333; padding: 3px 0 0 11px; }
+.stepcarousel-excerpt    { float: left; width: 230px; height: 120px; padding: 10px; }
+.stepcarousel-excerpt p  { font-size: 12px; color: #333; }
+.stepcarousel            { float: right; position: relative; overflow: scroll; width: 637px; height: 105px; padding:0; margin: 0; position: relative; right: 25px; top: 10px; }
+.stepcarousel .belt      { position: absolute; left: 0; top: 0; padding:0; margin:0; height: 115px }
+.stepcarousel .panel, 
+.stepcarousel .panel-video { float: left; overflow: hidden; margin: 0; width: 100px; height: 100px; padding: 3px; position: relative; }
+.stepcarousel .panel-video span { display: block; width: 55px; height: 21px; background-image: url(../images/btn_overlay_video.png); background-repeat: no-repeat; background-position: 0 0; position: absolute; bottom:5px; right:0; z-index: 999; }
+.stepcarousel .panel p   { display: block; width: 101px; margin: 0; font-size: 12px; font-weight: lighter; text-align: center; color: #FFF; position: absolute; background-color: #000; opacity: 0.5 ; }
+.stepcarousel .panel img,
+.stepcarousel .panel a   { border:0; text-decoration: underline; }
+#stepcarousel-wrapper #photoTab,
+#stepcarousel-wrapper #videoTab { position: relative; overflow: hidden; height: 145px; }
+#stepcarousel-wrapper p.gallery-link   { position: absolute; bottom: -5px; right:0; }
+#stepcarousel-wrapper .carousel-navLeft  { position: absolute; left: 270px; top: 55px; border:0; cursor: pointer; }
+#stepcarousel-wrapper .carousel-navRight { position: absolute; right: 5px; top: 55px; border:0; cursor: pointer;}
+#sesgallery-photo img { width: 100px; height: 100px; }
+
+/* Gallery selection nav */
+.stepcarousel-heading ul#galleryNav { position:absolute; right:20px; z-index: 999; top:3px; }
+.stepcarousel-heading ul#galleryNav li { display: block; float: left; list-style: none; padding:0; margin:0 0; cursor: pointer; }
+.stepcarousel-heading ul#galleryNav li a#showPhotos,
+.stepcarousel-heading ul#galleryNav li a#showVideos { display: block; padding: 0 12px; margin: 0 0 0 1px ; height: 22px; width: 35px; line-height: 21px; font-size: 11px; color: #FFF; background-color: #999; background-position: -55px 0px; cursor: pointer; border:0; }
+.stepcarousel-heading ul#galleryNav li a.active,
+.stepcarousel-heading ul#galleryNav li a#showVideos:hover, .stepcarousel-heading ul#galleryNav li a#showPhotos:hover { border:0;  cursor: pointer; background-color: #990000 !important; }
+#stepcarousel-wrapper #videoTab,  #stepcarousel-wrapper .photoTab { width: 100%; overflow: hidden; position: relative; z-index: 100 }
+
+/* Hartley events calendar & Events (Parent / child) full node view */
+#events-month-view, #events-in-series { width: 98%; width: 740px; height: 105px; background-image: url(../images/calbg_head.png); background-repeat: no-repeat; background-position: bottom; position: relative; left: 1px; }
+#events-in-series { height: 70px; }
+#download-billings-xls-form { float: right; margin: 0 0 0 10px; padding:0; }
+#events-month-view-btn, #download-billings-xls-btn { width: 84px; height: 22px; line-height: 18px !important; font-size: 11px; padding: 2px 0 5px; margin: 0; background-color: #FFF; background-image: url(../images/form_button.png); background-repeat: no-repeat; background-position: 0 0; border:0; cursor: pointer; outline: 0; }
+#events-month-view-btn:hover { font-weight: bold; }
+#events-month-view-footer { width: 98%; width: 740px; height: 30px; background-image: url(../images/calbg_foot.png); background-repeat: no-repeat; background-position: 0 0; position: relative; left: 1px; }
+#events-month-view form fieldset { margin: 0 0 10px 0; padding: 5px 5px 5px 0; border:0; }
+#events-month-view form fieldset select { margin: 0 10px 0 0; height: 22px; border: 1px outset #999; }
+#events-month-view h4 { color: #000; padding: 10px 0 5px; }
+#events-in-series { height: 70px; }
+#download-billings-xls-form { float: right; margin: 0 0 0 10px; padding:0; }
+#events-month-view-btn, #download-billings-xls-btn { width: 84px; height: 22px; line-height: 18px !important; font-size: 11px; padding: 2px 0 5px; margin: 0; background-color: #FFF; background-image: url(../images/form_button.png); background-repeat: no-repeat; background-position: 0 0; border:0; cursor: pointer; outline: 0; }
+#events-month-view-btn:hover { font-weight: bold; }
+#events-month-view-footer { width: 98%; width: 740px; height: 30px; background-image: url(../images/calbg_foot.png); background-repeat: no-repeat; background-position: 0 0; position: relative; left: 1px; }
+#events-month-view form fieldset { margin: 0 0 10px 0; padding: 5px 5px 5px 0; border:0; }
+#events-month-view form fieldset select { margin: 0 10px 0 0; height: 22px; border: 1px outset #999; }
+#events-month-view h4 { color: #000; padding: 10px 0 5px; }
+
+/* Event display used for Hartley calendar, Events, and Room reservation */
+fieldset #edit-resource-id-wrapper { display: none; }
+.form-submit { margin: 20px 0; }
+.events { clear:both; padding: 5px 0; margin: 0 0 0 1px; width: 740px; background-image: url(../images/calbg.png); background-position: 0 0px; background-repeat: repeat-y; position: relative; left: 0; overflow: auto; }
+.events .date { float:left; width: 70px; height: 38px; margin: -5px 3px 0 20px; padding: 3px 3px 2px; background-color: #FFF; }
+.events .date .day-of-week { display:block; float:left; font-size: 12px; }
+.events .date .day-of-month {display:block; float:left; font-size: 16px; margin-right: 10px; }
+.events .events-for-day { float: right; overflow: auto; position: relative; top: -5px; right: 20px; }
+.events .events-for-day .time { clear: both; float:left; display:block; font-size: 11px; line-height: 21px; width: 145px; text-indent: 3px; background-color: #FFF; margin: 0 1px; font-weight: bold; }
+.events .events-for-day .no-event { float:left; display:block;  line-height: 21px; width: 545px; text-indent: 147px; background-color: #FFF; margin: 0 1px;  }
+.events .events-for-day .event { width: 620px; margin: 0 0 1px 0; padding: 0; overflow: hidden; background-color: #FFF; }
+.events .events-for-day .event-name { float: left; display: block; font-size: 12px; line-height: 18px; width: 465px; overflow: hidden; background-color: #FFF }
+.events .events-for-day .event-name p { margin:0 0 5px; font-size: 11px; }
+.events .events-for-day .event .edit { float: right; height: 20px; }
+.events .events-for-day .event .edit a { margin: 0 5px 0 0; border:0; }
+.events .events-for-day .event .edit span a { margin: 2px 5px; border-bottom: 1px dotted #990000; }
+.events .events-for-day .event .edit span a:hover { margin: 0 5px 0 0; border-bottom: 1px solid #990000; }
+.events .events-for-day .event-name ul.related,
+.events .events-for-day .event-name ul.related li { margin:0 0 5px 10px!important; list-style: square !important; padding:0; font-size: 11px; line-height: 14px; }
+.events .events-for-day .event-name .edit-node { clear: both; float: left; margin: 10px 0; }
+#download-xls { width: 250px; height: 18px; position: absolute; right:0; top: 10px; padding: 5px; border: 1px solid #999; overflow: hidden; }
+#download-xls input { position: absolute; top: -2px; right: -2px; }
+
+/* Month navigator for Room reservation calendar */
+select#edit-month-select, 
+#events-room-view-form { margin: 10px 0 50px;}
+#events-room-view-form fieldset select#edit-room-select,
+#events-room-view-form fieldset #edit-room-select { width: 200px; border: 1px solid #999; }
+#events-room-view-form fieldset #events-month-view-btn { margin: 5px 10px; }
+#reservations-for-week { width: 98%; width: 740px; height: 275px; background-image: url(../images/calbg_head.png); background-repeat: no-repeat; background-position: bottom; position: relative; left: 1px;  }
+#reservations-for-week { height: 130px !important; background-image: url(../images/calbg_head_tall.png); background-position: 0px 20px; }
+#reservations-for-week #month-week-navigation { width: 697px; height: 70px; padding: 0 20px; margin: 0; background-image: url(../images/daynav_bg.png); background-position: 0px -4px; background-repeat: no-repeat; position: absolute; bottom: 19px; left:0; }
+#reservations-for-week #month-week-navigation #previous-month, 
+#reservations-for-week #month-week-navigation #previous-week, 
+#reservations-for-week #month-week-navigation #next-month, 
+#reservations-for-week #month-week-navigation #next-week { float: left; margin: 20px 5px 0 0; width: 112px; height: 20px; position: relative; }
+#reservations-for-week #month-week-navigation #next-month, #reservations-for-week #month-week-navigation #next-week { float: right; margin: 20px 0 0 15px }
+#reservations-for-week #month-week-navigation #show-week-of { float: left; margin: 14px 0 0; width: 207px; text-align: center; }
+#reservations-for-week #month-week-navigation #show-week-of h4, #reservations-for-week #month-week-navigation #show-week-of p { color: #FFF; margin: 0; padding: 0; line-height: 16px; }
+#reservations-for-week #month-week-navigation a { line-height: 18px; }
+#reservations-for-week #month-week-navigation a.left { margin-left: 30px;  }
+#reservations-for-week #month-week-navigation a { display: block; background-color: #CCC; padding: 1px 2px 1px 4px; border: 1px solid #999; line-height: 19px; }
+#reservations-for-week #month-week-navigation a:hover { background-color: #BBB; color: #FFF; }
+#reservations-for-week #month-week-navigation #previous-month a img,  
+#reservations-for-week #month-week-navigation #previous-week a img { float: left; margin: 2px 5px 0 0; }
+#reservations-for-week #month-week-navigation #next-month a img, 
+#reservations-for-week #month-week-navigation #next-week a img { float: right; margin: 2px 0 0 0; }
+
+.content33,
+.content66 {
+	float: left;
+	padding-right: 1em;
+}
+
+.content33:last-child,
+.content66:last-child{
+	padding-right: 0;
+}
+
+.content33 {
+	width: 32.25%;
+	*width: 32%;
+}
+
+.content66 {
+	width: 66%;
+	_width: 64%;
+}
+
+#program-calendar, .program-calendar {
+	float: none;
+	padding: 0;
+}
+
+/* Slideshow homepage feature  */
+.view-Homepage {
+	position: relative;
+	margin: 1em 0;
+}
+
+.views_slideshow_thumbnailhover_div_breakout_teaser {
+	background-color: #666;
+	color: #fff;
+}
+
+.view-Homepage .activeSlide {
+	background-color: #4886c8
+}
+
+.transparency,
+.mycontent {
+	position: absolute;
+}
+
+.transparency,
+.mycontent {
+	width: 100%;
+	background-color: #000;
+	background: transparent url(../images/transparent.png) repeat 0 0;
+}
+
+.mycontent {
+	padding: 15px;
+}
+
+.mycontent,
+.mycontent a,
+.mycontent h2,
+.views_slideshow_thumbnailhover_div_breakout_teaser a {
+	color: #fff;
+}
+
+.mycontent a {
+	border-bottom: 1px dotted #fff;
+}
+
+.mycontent a:hover {
+	border-bottom-style: solid;
+}
+
+.mycontent p:last-child {
+	margin-bottom: 0;
+}
+
+/* Slideshow with empty navigation circles */
+
+.emptynav .transparency,
+.emptynav .mycontent {
+	bottom: 0;
+}
+
+.emptynav .views-slideshow-controls-bottom {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 100;
+}
+
+.emptynav .views_slideshow_thumbnailhover_div_breakout_teaser {
+	display: block;
+	float: left;
+	width: 1px;
+	height: 1px;
+	margin: 3px 2px 0 2px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 3px #ccc;
+	/* useful if you don't want a bg color from leaking outside the border: */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+/* Slideshow with horizontal navigation tabs */
+
+
+.horizontalnav .views_slideshow_thumbnailhover_div_breakout_teaser {
+	opacity: .8;
+	display: block;
+	float:left;
+	width: 177px;
+	margin: 3px 3px 0 0;
+	height: 35px;
+	padding: 5px;
+}
+
+.horizontalnav .views_slideshow_thumbnailhover_div_breakout_teaser:last-child {
+	margin-right: 0;
+	width: 182px;
+}
+
+.items-4 .views_slideshow_thumbnailhover_div_breakout_teaser {
+	width: 225px;
+}
+
+.items-4 .views_slideshow_thumbnailhover_div_breakout_teaser:last-child {
+	width: 228px;
+}
+
+.horizontalnav .activeSlide {
+	opacity: 1;
+}
+
+.horizontalnav .transparency,
+.horizontalnav .mycontent {
+	bottom: 10%;
+}
+
+/* Slideshow with vertical navigation tabs */
+
+.verticalnav .views-slideshow-controls-bottom {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+.verticalnav .views_slideshow_thumbnailhover_div_breakout_teaser {
+	display: block;
+	width: 288px;
+	height: 57px;
+	margin: 0 0 2px 2px;
+	padding: 5px;
+}
+
+.verticalnav .views_slideshow_thumbnailhover_div_breakout_teaser:last-child {
+	margin-bottom: 0;
+}
+.verticalnav .transparency,
+.verticalnav .mycontent {
+	width: 652px;
+	bottom: 10%;
+}
+
+/*##### Carousel ###### */
+.jcarousel-skin-default {
+	position: relative;
+	text-align: left;
+}
+
+/* Container */
+.jcarousel-container-horizontal {
+	width: 100%;
+	height: 100%;
+	padding: 0 0 20px 0;
+}
+.jcarousel-clip-horizontal {
+	width: 99.5%;
+}
+
+/* #### Item #### */
+.jcarousel-item-horizontal {
+	height: 500px;
+	margin:  0 3px;
+	padding: 10px 0;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+
+.jcarousel-item-horizontal:first-child {
+	margin-left: 0;
+}
+
+.jcarousel-item-horizontal .field-content {
+	display: block;
+	padding: 0 10px;
+}
+
+.jcarousel-item img {
+	border: 1px solid #ccc;
+}
+
+/* #### navigation #### */
+.jcarousel-prev-horizontal,
+.jcarousel-next-horizontal {
+	position: absolute;
+	bottom: 0;
+	display: block;
+}
+
+.jcarousel-prev-horizontal,
+.jcarousel-prev-horizontal:hover {
+	right: 30px;
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-right: 12px solid #900;
+	border-bottom: 6px solid transparent;
+}
+
+.jcarousel-next-horizontal,
+.jcarousel-next-horizontal:hover {
+	right: 5px;
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-left: 12px solid #900;
+	border-bottom: 6px solid transparent;
+}
+.gallery .field-item {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.view-Media .article {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 0 49px 50px 0;
+  min-height: 200px;
+  min-width: 200px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+
+.view-Media .article h4 a {
+  background: url("../images/pixel.png");
+  bottom: 0;
+  color: #fff;
+  display: block;
+  font-family: sans-serif;
+  font-size: 11px;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.views-row .article {
+	clear: left;
+}
+
+.more-link { border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; line-height: 160%; padding-right: 15px; background: transparent url(../../ses_main/images/arrow.png) no-repeat center right;}
+.more-link a { text-align: right; text-transform: uppercase; border:0; color: #666; overflow: hidden; font-size: 11px;}
+.more-link a:hover { text-decoration: underline; color: #990000;  }

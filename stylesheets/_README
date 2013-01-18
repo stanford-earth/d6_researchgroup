@@ -1,0 +1,10 @@
+# Copyright (c) 2010, Stanford University. All rights reserved.
+# Stanford University, School of Earth Sciences Site framework. 
+#  base.css
+#  + site.css
+#  + print.css
+#  + ie.css
+
+Within each theme `base.css` is sym-linked to ses_main. If you need 
+to overwrite a style for the site or theme that you are working on 
+then do so in `site.css` within the working directory of your theme.

@@ -1,0 +1,97 @@
+/**
+ * Copyright (c) 2010, Stanford University. All rights reserved.
+ * Stanford University, School of Earth Sciences Site framework. 
+ * 
+ * IE Fixes
+ */
+
+body { font-size: 12px; line-height: 17px; color: #666;  }
+#page-header #branding a { position: relative; top: 0px; }
+
+/* For clickmenu.js */
+#globalnav #linksbar a#explore-menu {	position: relative; top: -27px; right: 1px; }
+#explore-shelf-pos #explore-shelf ul#more-links { _width: 187px; margin-left: 0px; }
+
+/* IE Transparent png's */
+#gallery .stepcarousel .belt .panel .gallery-caption, 
+#related-photos .caption, 
+#featured-content-for-subpages #caption, 
+.featured-project #project-title { _background-image: none !important; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', src='sites/all/themes/ses_main/images/transparent.png', sizingMethod='scale') !important; bottom: 26px !important; right: 23px !important; }
+.overlay-bg { _background-image: none !important; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', src='sites/all/themes/ses_main/images/transparent.png', sizingMethod='scale') !important; }
+.gallery-caption { position: absolute; top: 305px; left: 0; _background: #000; _filter: alpha(opacity=70)  }
+li span.plus { background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', src='sites/all/themes/ses_main/images/plus.png'); } 
+
+/* Layout */
+#program-calendar .event .event-description { float: left; border:0; padding: 0 0 0 3px; margin: -2px 0 0; overflow: hidden;}
+#program-calendar .event .date span.day { display:block; line-height: 24px; }
+#news-and-events #program-calendar p a, #announcements p.clearfix a { float: right; text-transform: uppercase; text-decoration: none; color: #666; border:0; }
+#news-and-events #program-calendar p a:hover, #announcements p.clearfix a:hover { text-decoration: underline; color: #990000 }
+#main-content { float: left; }
+.secondary-features, .secondary-features .photo { width: 177px; }
+#related-photos .photo { float: left; width: 182px; height: 182px; _margin: 4px; background-color: #EEE; overflow: hidden; position: relative; }
+#featured-content-for-subpages { margin: -5px 0 5px -12px; }
+#featured-content-for-subpages #caption { position: absolute; top: 167px; _top: 161px; left:0; width: 531px; font-size: 11px; height: 100px} 
+
+#featured-right { width: 308px !important; overflow: hidden; }
+#quicklinks ul li { margin: 12px 0px 3px 5px; list-style-type: circle; }
+
+
+/* Profiles */
+.profile-vcard { clear: both; padding: 40px 0 10px; }
+.profile-vcard .description { float: left; margin: 0; padding: 0 3px 10px; width: auto;  overflow: auto; }
+#profile-tabs a { border: 0; text-decoration: none;  }
+
+/* Search button */
+#page-header #navigation #search-box #search .btn { position: absolute; top:5px; right: 1px;}
+fieldset select { margin: 10px 0; }
+fieldset legend { position: relative; top:0; left:0; background-color: #FFF; }
+.form-button { float: right; background-color:#FFF; border: 1px outset #666; cursor: pointer; }
+
+/* Subpage side navigation */
+#subpage-navigation ul.menu { overflow: hidden; list-style-type: none !important; margin-top: 10px;}
+#subpage-navigation ul.menu li a { display: block; width: 200px; height: auto; line-height: 16px; border:0; padding: 10px; border-bottom: 1px dotted #CCC; font-size: 11px; }
+#wsubpage-navigation ul.menu li a, #subpage-navigation ul.menus li a:visited,
+#subpage-navigation ul.menu li a.active { display: block; width: 200px; height: 20px; line-height: 16px; border:0; padding: 10px; border-bottom: 1px dotted #CCC; }
+#subpage-navigation ul.menu li ul { width: 185px !important; overflow: hidden; list-style: none !important; list-style-type: none !important; }
+#subpage-navigation ul.menu li ul li { width: 185px !important; overflow: hidden; list-style: none !important; list-style-type: none !important; }
+
+#spotlight { width: 316px; }
+
+/* Global cross-site bar */
+#shelf #research-group-links { width: 980px; }
+#shelf #research-group-links ul li a { line-height: 15px; margin: 1px; }
+
+/* User / Project Profiles */
+.profile .description { float: left; margin: 0; padding:3px 3px 10px; width: auto; background-color: #FFF; border: 1px solid #CCC; border-left:0; border-right:0; border-bottom:0;}
+
+/* Side / Sub navigation */
+#subpage-navigation ul.menus li a { border:0; display: block; height: auto; min-height: 24px; _height: 25px; line-height: 21px; }
+
+/* Hartley Calendar events list */
+.events .date { _margin: -5px 3px 0 10px; _padding: 3px 3px 2px;  }
+.events .events-for-day .event { _width: 617px; _margin: 0 0 1px 0; _padding: 0;  }
+.events .date .day-of-week { display:block; float:left; font-size: 11px; }
+
+/* For clickmenu.js */
+.clickMenu div.outerbox { display: none; min-width: 106px; background-color: transparent; }
+.clickMenu .innerBox { display: none; border:0; background-color: #FFF; }
+#clickMenu li ul#facilities { width: 370px; left: -280px; top: 3px;}
+
+/* News teaser */
+/* .news-teaser { padding: 2px 0 10px; margin: 0 0 5px; overflow: visible; border-bottom: 1px dotted #CCC; } */
+
+/* Related photos */
+.related-photos { _margin: 5px; _padding: 2px; _width: 230px; _height: 209px;}
+.related-photos .photo { _margin: 3px 2px; _padding:0; }
+
+#related-information .gift { clear: both; margin:0; padding: 0 0 0px; width: 170px; height: 68px !important;  background-color: #EDE8E2; overflow: hidden; }
+#explore-ses-quicklinks ul li { margin: 0px 10px 6px 3px; list-style-type: circle; font-size: 11px; }
+
+
+/* User / Project Profiles */
+.profile-vcard { padding: 5px; width: 731px; }
+.profile-vcard div { background-color: #FFF; padding: 5px 5px 35px; overflow: auto !important; }
+
+#footer div { padding: 0; margin:0 0 0 10px; }
+
+
